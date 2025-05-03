@@ -9,11 +9,6 @@ const About = () => {
           <div className="md:w-1/2">
             <div className="relative">
               <div className="w-full h-[400px] rounded-xl bg-gradient-to-br from-amitblue-400 to-amitblue-600 shadow-xl"></div>
-              <div className="absolute -bottom-6 -right-6 w-2/3 bg-amitgold-500 rounded-lg p-6 shadow-lg">
-                <p className="text-white text-lg font-medium leading-relaxed">
-                  "העתיד הפיננסי שלך הוא העדיפות הראשונה שלנו"
-                </p>
-              </div>
             </div>
           </div>
           
