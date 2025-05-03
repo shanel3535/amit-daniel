@@ -79,6 +79,23 @@
   }
 }
 
+/* Accessibility Classes */
+.text-normal {
+  font-size: 100%;
+}
+
+.text-large {
+  font-size: 120%;
+}
+
+.text-larger {
+  font-size: 140%;
+}
+
+.high-contrast {
+  filter: contrast(1.5);
+}
+
 @font-face {
   font-family: 'Heebo';
   font-style: normal;
@@ -97,4 +114,26 @@
   padding: 0;
   text-align: right;
   direction: rtl;
+}
+
+/* Accessibility focus styles */
+:focus {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Skip to main content link - keyboard accessibility */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+
+.skip-to-content:focus {
+  top: 0;
 }

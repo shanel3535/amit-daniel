@@ -6,17 +6,22 @@ import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import AccessibilityWidget from "@/components/AccessibilityWidget";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <a href="#main" className="skip-to-content">דלג לתוכן העיקרי</a>
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Testimonials />
-      <Contact />
+      <main id="main">
+        <Hero />
+        <About />
+        <Services />
+        <Testimonials />
+        <Contact />
+      </main>
       <Footer />
+      <AccessibilityWidget />
     </div>
   );
 };

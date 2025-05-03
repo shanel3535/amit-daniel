@@ -41,10 +41,11 @@ const Hero = () => {
                     </div>
                     <div className="space-y-2">
                       <label className="block text-sm font-medium text-gray-700">תקופת החזר</label>
-                      <select className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amitgold-500/50 focus:border-amitgold-500">
+                      <select className="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amitgold-500/50 focus:border-amitgold-500"
+                        defaultValue="20 שנים">
                         <option>10 שנים</option>
                         <option>15 שנים</option>
-                        <option selected>20 שנים</option>
+                        <option>20 שנים</option>
                         <option>25 שנים</option>
                         <option>30 שנים</option>
                       </select>
