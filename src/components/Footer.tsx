@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Linkedin, Phone, WhatsApp } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Phone, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -28,7 +28,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a href="https://wa.me/972546361746" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="h-10 w-10 bg-amitblue-400 hover:bg-amitblue-300 rounded-full flex items-center justify-center transition-colors">
-                <WhatsApp className="h-5 w-5" />
+                <MessageSquare className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -56,7 +56,7 @@ const Footer = () => {
                 054-636-1746
               </a>
               <a href="https://wa.me/972546361746" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
-                <WhatsApp className="h-4 w-4 text-amitgold-500" />
+                <MessageSquare className="h-4 w-4 text-amitgold-500" />
                 שלח הודעת וואטסאפ
               </a>
               <a href="mailto:contact@example.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
