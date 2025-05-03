@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -13,6 +13,10 @@ const Footer = () => {
               אנו מלווים אותך לאורך כל הדרך לקבלת המשכנתא האופטימלית עבורך,
               עם מסלולים מותאמים אישית וחיסכון משמעותי.
             </p>
+            <div className="flex items-center gap-4 mb-4">
+              <Phone className="h-5 w-5 text-amitgold-500" />
+              <span className="text-white/90">054-636-1746</span>
+            </div>
             <div className="flex space-x-4 space-x-reverse">
               <a href="#" aria-label="Facebook" className="h-10 w-10 bg-amitblue-400 hover:bg-amitblue-300 rounded-full flex items-center justify-center transition-colors">
                 <Facebook className="h-5 w-5" />
@@ -65,3 +69,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

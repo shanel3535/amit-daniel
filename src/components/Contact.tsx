@@ -141,7 +141,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-amitgold-500">טלפון</h4>
-                    <p className="text-white/90">055-123-4567</p>
+                    <p className="text-white/90">054-636-1746</p>
                   </div>
                 </div>
                 
@@ -192,3 +192,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
