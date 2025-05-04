@@ -6,23 +6,17 @@ const About = () => {
   return (
     <section id="about" className="section-padding bg-white w-full">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row gap-12 items-center">
-          <div className="md:w-1/2">
-            <div className="relative">
-              {/* Removed the blue gradient box */}
-            </div>
-          </div>
-          
-          <div className="md:w-1/2">
+        <div className="flex flex-col lg:flex-row gap-12">
+          <div className="w-full">
             <h2 className="heading-2 text-amitblue-500 mb-6">אודות עמית דניאל</h2>
             <p className="text-gray-700 mb-6">
-              כמומחה מוביל בתחום המשכנתאות והייעוץ הפיננסי עם ניסיון מוכח של למעלה מ-15 שנה, אני מציע פתרונות מותאמים אישית המבוססים על ניתוח מעמיק של המצב הפיננסי והיעדים ארוכי הטווח של כל לקוח.
+              כמומחה מוביל בתחום המשכנתאות והייעוץ הפיננסי, אני מציע פתרונות מותאמים אישית המבוססים על ניתוח מעמיק של המצב הפיננסי והיעדים ארוכי הטווח של כל לקוח.
             </p>
             <p className="text-gray-700 mb-8">
               הגישה המקצועית שלי משלבת ידע מעמיק בשוק המשכנתאות, יכולת ניתוח פיננסי ברמה גבוהה ומיומנויות משא ומתן מול המערכת הבנקאית, מה שמאפשר ללקוחותיי לחסוך עשרות אלפי שקלים ולקבל תנאים מיטביים התואמים את צרכיהם הייחודיים.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8">
               <div className="flex items-center gap-3">
                 <CheckCircle className="text-amitgold-500 h-5 w-5" />
                 <span className="text-gray-700">ייעוץ משכנתא אישי</span>
