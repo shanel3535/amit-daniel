@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="section-padding bg-white w-full">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2">
@@ -16,13 +16,10 @@ const About = () => {
           <div className="md:w-1/2">
             <h2 className="heading-2 text-amitblue-500 mb-6">אודות עמית דניאל</h2>
             <p className="text-gray-700 mb-6">
-              עם ניסיון של למעלה מ-15 שנה בתחום המשכנתאות והייעוץ הפיננסי, אני מתמחה בהתאמת מסלולי משכנתא
-              המותאמים באופן אישי למצב הכלכלי ולצרכים הספציפיים של כל לקוח.
+              כמומחה מוביל בתחום המשכנתאות והייעוץ הפיננסי עם ניסיון מוכח של למעלה מ-15 שנה, אני מציע פתרונות מותאמים אישית המבוססים על ניתוח מעמיק של המצב הפיננסי והיעדים ארוכי הטווח של כל לקוח.
             </p>
             <p className="text-gray-700 mb-8">
-              בשנים האחרונות סייעתי למאות משפחות וזוגות צעירים לרכוש את הבית של חלומותיהם
-              תוך חיסכון של עשרות אלפי שקלים בעלויות המשכנתא. השיטה שלי מבוססת על ניתוח
-              מעמיק של השוק, הבנה מעמיקה של מסלולי המימון ומשא ומתן מול הבנקים.
+              הגישה המקצועית שלי משלבת ידע מעמיק בשוק המשכנתאות, יכולת ניתוח פיננסי ברמה גבוהה ומיומנויות משא ומתן מול המערכת הבנקאית, מה שמאפשר ללקוחותיי לחסוך עשרות אלפי שקלים ולקבל תנאים מיטביים התואמים את צרכיהם הייחודיים.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
