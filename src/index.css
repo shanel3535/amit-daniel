@@ -96,6 +96,27 @@
   filter: contrast(1.5);
 }
 
+.grayscale {
+  filter: grayscale(1);
+}
+
+.invert-colors {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.underline-links a {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+  text-underline-offset: 2px !important;
+}
+
+.readable-font {
+  font-family: Arial, sans-serif !important;
+  letter-spacing: 0.12em !important;
+  word-spacing: 0.16em !important;
+  line-height: 1.6 !important;
+}
+
 @font-face {
   font-family: 'Heebo';
   font-style: normal;
@@ -144,4 +165,3 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-

@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -24,7 +23,6 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center">
           <div className={`flex items-center ${isScrolled ? "text-elle-500" : "text-white"}`}>
-            <img src="/lovable-uploads/68c799d7-fe06-4f1b-8850-f20c84ea9eff.png" alt="ELLE Logo" className="h-12 w-auto mr-2" />
             <span className="font-bold text-xl">
               ELLE | 
               <span className="text-marble-200"> המשכנתא</span>
