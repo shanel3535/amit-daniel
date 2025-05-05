@@ -39,7 +39,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="section-padding bg-marble-50">
+    <section id="testimonials" className="section-padding bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="heading-2 text-elle-500 mb-4">מה לקוחותינו אומרים</h2>
@@ -54,7 +54,7 @@ const Testimonials = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <Card className="h-full bg-white border-marble-200 shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <Card className="h-full bg-white border-gray-200 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <CardContent className="p-6">
                       <div className="flex justify-center mb-4">
                         {[...Array(5)].map((_, i) => (

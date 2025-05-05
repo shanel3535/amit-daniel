@@ -45,7 +45,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-heebo;
+    @apply bg-white text-foreground font-heebo;
   }
 
   html {
@@ -59,7 +59,7 @@
   }
   
   .hero-gradient {
-    @apply bg-gradient-to-b from-elle-500 to-elle-700;
+    @apply bg-white;
   }
   
   .heading-1 {
@@ -75,7 +75,7 @@
   }
 
   .elle-service-card {
-    @apply border border-border bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
+    @apply border border-gray-200 bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
   }
 }
 
@@ -160,7 +160,7 @@
 }
 
 .marble-bg {
-  background-image: url('/lovable-uploads/68c799d7-fe06-4f1b-8850-f20c84ea9eff.png');
+  background-image: url('/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

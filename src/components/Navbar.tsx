@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -17,15 +18,15 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white shadow-md py-3"
-          : "bg-transparent py-5"
+          : "bg-white py-5"
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center">
-          <div className={`flex items-center ${isScrolled ? "text-elle-500" : "text-white"}`}>
+          <div className="flex items-center text-elle-500">
             <span className="font-bold text-xl">
               ELLE | 
-              <span className="text-marble-200"> המשכנתא</span>
+              <span className="text-marble-400"> המשכנתא</span>
             </span>
           </div>
         </a>
@@ -47,7 +48,7 @@ const Navbar = () => {
         <div className="md:hidden">
           <Button
             variant="ghost"
-            className={isScrolled ? "text-elle-500" : "text-white"}
+            className="text-elle-500"
           >
             ☰
           </Button>
@@ -68,11 +69,7 @@ const NavLink = ({
 }) => (
   <a
     href={href}
-    className={`px-4 py-2 rounded-md transition-colors duration-300 ${
-      isScrolled 
-        ? "text-elle-500 hover:bg-elle-50" 
-        : "text-white hover:bg-white/10"
-    }`}
+    className={`px-4 py-2 rounded-md transition-colors duration-300 text-elle-500 hover:bg-elle-50`}
   >
     {children}
   </a>

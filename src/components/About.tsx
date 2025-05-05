@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-marble-50 w-full">
+    <section id="about" className="section-padding bg-gray-50 w-full">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-12">
           <div className="w-full">
