@@ -7,33 +7,33 @@
 
 @layer base {
   :root {
-    --background: 210 40% 98%;
-    --foreground: 222 47% 11%;
+    --background: 30 33% 98%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 216 61% 15%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 10%;
+    --primary-foreground: 30 33% 98%;
 
-    --secondary: 214 100% 97%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 30 13% 92%;
+    --secondary-foreground: 0 0% 10%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 30 13% 96%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 44 57% 52%;
-    --accent-foreground: 222 47% 11%;
+    --accent: 30 13% 92%;
+    --accent-foreground: 0 0% 10%;
 
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 30 33% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 222 84% 5%;
+    --border: 30 13% 90%;
+    --input: 30 13% 90%;
+    --ring: 0 0% 10%;
 
     --radius: 0.5rem;
   }
@@ -59,7 +59,7 @@
   }
   
   .hero-gradient {
-    @apply bg-gradient-to-r from-amitblue-500 to-amitblue-700;
+    @apply bg-gradient-to-b from-elle-500 to-elle-700;
   }
   
   .heading-1 {
@@ -70,11 +70,11 @@
     @apply text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight;
   }
 
-  .amit-button {
-    @apply bg-amitgold-500 hover:bg-amitgold-600 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300;
+  .elle-button {
+    @apply bg-elle-500 hover:bg-elle-600 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300;
   }
 
-  .amit-service-card {
+  .elle-service-card {
     @apply border border-border bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300;
   }
 }
@@ -137,3 +137,11 @@
 .skip-to-content:focus {
   top: 0;
 }
+
+.marble-bg {
+  background-image: url('/lovable-uploads/68c799d7-fe06-4f1b-8850-f20c84ea9eff.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+

@@ -4,13 +4,13 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
-    <section id="about" className="section-padding bg-white w-full">
+    <section id="about" className="section-padding bg-marble-50 w-full">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-12">
           <div className="w-full">
-            <h2 className="heading-2 text-amitblue-500 mb-6">אודות עמית דניאל</h2>
+            <h2 className="heading-2 text-elle-500 mb-6">אודות ELLE המשכנתא</h2>
             <p className="text-gray-700 mb-6">
-              כמומחה מוביל בתחום המשכנתאות והייעוץ הפיננסי, אני מציע פתרונות מותאמים אישית המבוססים על ניתוח מעמיק של המצב הפיננסי והיעדים ארוכי הטווח של כל לקוח.
+              כמומחית מובילה בתחום המשכנתאות והייעוץ הפיננסי, אני מציעה פתרונות מותאמים אישית המבוססים על ניתוח מעמיק של המצב הפיננסי והיעדים ארוכי הטווח של כל לקוח.
             </p>
             <p className="text-gray-700 mb-8">
               הגישה המקצועית שלי משלבת ידע מעמיק בשוק המשכנתאות, יכולת ניתוח פיננסי ברמה גבוהה ומיומנויות משא ומתן מול המערכת הבנקאית, מה שמאפשר ללקוחותיי לחסוך עשרות אלפי שקלים ולקבל תנאים מיטביים התואמים את צרכיהם הייחודיים.
@@ -18,34 +18,34 @@ const About = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-8">
               <div className="flex items-center gap-3">
-                <CheckCircle className="text-amitgold-500 h-5 w-5" />
+                <CheckCircle className="text-elle-500 h-5 w-5" />
                 <span className="text-gray-700">ייעוץ משכנתא אישי</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle className="text-amitgold-500 h-5 w-5" />
+                <CheckCircle className="text-elle-500 h-5 w-5" />
                 <span className="text-gray-700">מומחיות במשא ומתן מול בנקים</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle className="text-amitgold-500 h-5 w-5" />
+                <CheckCircle className="text-elle-500 h-5 w-5" />
                 <span className="text-gray-700">חיסכון של אלפי שקלים</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle className="text-amitgold-500 h-5 w-5" />
+                <CheckCircle className="text-elle-500 h-5 w-5" />
                 <span className="text-gray-700">תנאי מימון מועדפים</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle className="text-amitgold-500 h-5 w-5" />
+                <CheckCircle className="text-elle-500 h-5 w-5" />
                 <span className="text-gray-700">ליווי משפטי בתהליך</span>
               </div>
               <div className="flex items-center gap-3">
-                <CheckCircle className="text-amitgold-500 h-5 w-5" />
+                <CheckCircle className="text-elle-500 h-5 w-5" />
                 <span className="text-gray-700">דיסקרטיות מלאה</span>
               </div>
             </div>
             
             <div className="flex justify-center md:justify-start">
               <Button 
-                className="bg-green-500 hover:bg-green-600 text-white flex items-center gap-2"
+                className="bg-elle-500 hover:bg-elle-600 text-white flex items-center gap-2"
                 onClick={() => window.open('https://wa.me/972546361746', '_blank')}
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="white" stroke="currentColor" strokeWidth="0" strokeLinecap="round" strokeLinejoin="round">

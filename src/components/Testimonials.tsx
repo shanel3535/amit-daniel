@@ -14,35 +14,35 @@ const testimonials = [
   {
     name: "משפחת לוי",
     image: "https://images.unsplash.com/photo-1581054399371-12cc5cdb9627?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    text: "עמית ליווה אותנו בתהליך רכישת הדירה הראשונה שלנו. הוא הצליח למקסם את יכולת ההחזר שלנו ולהשיג עבורנו תנאים מעולים. חסכנו מעל 120,000 ₪ בעלות הכוללת של המשכנתא!",
+    text: "ELLE ליוותה אותנו בתהליך רכישת הדירה הראשונה שלנו. היא הצליחה למקסם את יכולת ההחזר שלנו ולהשיג עבורנו תנאים מעולים. חסכנו מעל 120,000 ₪ בעלות הכוללת של המשכנתא!",
     role: "רכישת דירה ראשונה",
   },
   {
-    name: "רון כהן",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    text: "מחזרתי משכנתא באמצעות השירות של עמית דניאל והצלחתי לחסוך אלפי שקלים בחודש. התהליך היה פשוט, מהיר ועם תוצאות מדהימות. ממליץ בחום!",
+    name: "רונית כהן",
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    text: "מחזרתי משכנתא באמצעות השירות של ELLE והצלחתי לחסוך אלפי שקלים בחודש. התהליך היה פשוט, מהיר ועם תוצאות מדהימות. ממליצה בחום!",
     role: "מחזור משכנתא",
   },
   {
     name: "דנה ואלון",
     image: "https://images.unsplash.com/photo-1515463138280-a8ab572304d4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    text: "בזכות הייעוץ המקצועי של עמית, הצלחנו לקבל משכנתא בתנאים מעולים למרות שבנקים אחרים דחו אותנו. הוא ידע בדיוק איך להתמודד עם המורכבות של המקרה שלנו.",
+    text: "בזכות הייעוץ המקצועי של ELLE, הצלחנו לקבל משכנתא בתנאים מעולים למרות שבנקים אחרים דחו אותנו. היא ידעה בדיוק איך להתמודד עם המורכבות של המקרה שלנו.",
     role: "משכנתא בתנאים מיוחדים",
   },
   {
-    name: "איתי גולדשטיין",
-    image: "https://images.unsplash.com/photo-1618077360395-f3068be8e001?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
-    text: "עמית דניאל הוביל אותנו לחיסכון משמעותי במחזור המשכנתא שלנו. הוא פירק את המסלולים הקיימים לפרטי פרטים והציע תמהיל חדש שמתאים לנו בצורה מושלמת.",
-    role: "משקיע נדל״ן",
+    name: "מיכל גולדשטיין",
+    image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    text: "ELLE הובילה אותנו לחיסכון משמעותי במחזור המשכנתא שלנו. היא פירקה את המסלולים הקיימים לפרטי פרטים והציעה תמהיל חדש שמתאים לנו בצורה מושלמת.",
+    role: "משקיעת נדל״ן",
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section id="testimonials" className="section-padding bg-white">
+    <section id="testimonials" className="section-padding bg-marble-50">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="heading-2 text-amitblue-500 mb-4">מה לקוחותינו אומרים</h2>
+          <h2 className="heading-2 text-elle-500 mb-4">מה לקוחותינו אומרים</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             הסיפוק הגדול ביותר שלנו הוא לראות את הלקוחות שלנו מגשימים את חלום הדיור שלהם
             ונהנים מחיסכון משמעותי לאורך כל תקופת המשכנתא.
@@ -54,11 +54,11 @@ const Testimonials = () => {
             <CarouselContent>
               {testimonials.map((testimonial, index) => (
                 <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                  <Card className="h-full bg-gray-50 border-none shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <Card className="h-full bg-white border-marble-200 shadow-md hover:shadow-lg transition-shadow duration-300">
                     <CardContent className="p-6">
                       <div className="flex justify-center mb-4">
                         {[...Array(5)].map((_, i) => (
-                          <StarIcon key={i} className="h-5 w-5 text-amitgold-500 fill-current" />
+                          <StarIcon key={i} className="h-5 w-5 text-elle-500 fill-current" />
                         ))}
                       </div>
                       <p className="text-gray-700 mb-6">{testimonial.text}</p>
@@ -67,7 +67,7 @@ const Testimonials = () => {
                           <img src={testimonial.image} alt={testimonial.name} className="h-full w-full object-cover" />
                         </div>
                         <div className="mr-4">
-                          <h4 className="font-bold text-amitblue-500">{testimonial.name}</h4>
+                          <h4 className="font-bold text-elle-500">{testimonial.name}</h4>
                           <p className="text-sm text-gray-500">{testimonial.role}</p>
                         </div>
                       </div>
