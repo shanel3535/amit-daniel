@@ -24,7 +24,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <a href="#" className="flex items-center">
           <div className={`flex items-center ${isScrolled ? "text-elle-500" : "text-white"}`}>
-            <img src="/lovable-uploads/68c799d7-fe06-4f1b-8850-f20c84ea9eff.png" alt="ELLE Logo" className="h-10 w-auto mr-2" />
+            <img src="/lovable-uploads/68c799d7-fe06-4f1b-8850-f20c84ea9eff.png" alt="ELLE Logo" className="h-12 w-auto mr-2" />
             <span className="font-bold text-xl">
               ELLE | 
               <span className="text-marble-200"> המשכנתא</span>
@@ -37,13 +37,14 @@ const Navbar = () => {
           <NavLink href="#services" isScrolled={isScrolled}>שירותים</NavLink>
           <NavLink href="#testimonials" isScrolled={isScrolled}>המלצות</NavLink>
           <NavLink href="#contact" isScrolled={isScrolled}>צור קשר</NavLink>
-          <Button 
-            variant="default"
-            className="mr-4 bg-elle-500 hover:bg-elle-600"
-            onClick={() => window.open('https://wa.me/972546361746', '_blank')}
-          >
-            תיאום פגישה
-          </Button>
+          <a href="#contact">
+            <Button 
+              variant="default"
+              className="mr-4 bg-elle-500 hover:bg-elle-600"
+            >
+              למילוי טופס פרטים
+            </Button>
+          </a>
         </nav>
         <div className="md:hidden">
           <Button
