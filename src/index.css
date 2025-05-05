@@ -165,3 +165,8 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+/* Adding opacity class for service images */
+.opacity-15 {
+  opacity: 0.15;
+}

@@ -44,38 +44,48 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {serviceItems.map((service, index) => (
-            <Card key={index} className="elle-service-card border-marble-200">
-              <CardHeader>
-                <div className="mb-4">{service.icon}</div>
-                <CardTitle className="text-xl text-elle-500">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="h-40 w-full mb-4 flex items-center justify-center bg-white rounded-md overflow-hidden">
-                  <img src={service.image} alt={service.title} className="max-h-full max-w-full object-contain" />
-                </div>
-                <p className="text-gray-600">{service.description}</p>
-              </CardContent>
-              <CardFooter>
-                <a href="#contact" className="w-full">
-                  <Button variant="outline" className="w-full border-elle-500 text-elle-500 hover:bg-elle-500 hover:text-white">
-                    למידע נוסף
-                  </Button>
-                </a>
-              </CardFooter>
+            <Card key={index} className="elle-service-card border-marble-200 relative overflow-hidden">
+              <div className="absolute inset-0 z-0">
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="w-full h-full object-cover opacity-15"
+                />
+              </div>
+              <div className="relative z-10">
+                <CardHeader>
+                  <div className="mb-4">{service.icon}</div>
+                  <CardTitle className="text-xl text-elle-500">{service.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-800 font-medium">{service.description}</p>
+                </CardContent>
+                <CardFooter>
+                  <a href="#contact" className="w-full">
+                    <Button variant="outline" className="w-full border-elle-500 text-elle-500 hover:bg-elle-500 hover:text-white">
+                      למידע נוסף
+                    </Button>
+                  </a>
+                </CardFooter>
+              </div>
             </Card>
           ))}
         </div>
         
-        <div className="mt-16 bg-gray-100 rounded-xl p-8 shadow-xl border border-gray-200">
-          <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="mt-16 bg-gray-100 rounded-xl p-8 shadow-xl border border-gray-200 relative overflow-hidden">
+          <div className="absolute inset-0 z-0">
+            <img 
+              src="/lovable-uploads/aaf83708-91b8-4e32-a55a-9ae63fb87046.png" 
+              alt="רקע" 
+              className="w-full h-full object-cover opacity-15"
+            />
+          </div>
+          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-2/3 mb-6 md:mb-0">
               <div className="md:flex items-center gap-6">
-                <div className="md:w-1/3 mb-4 md:mb-0 flex justify-center">
-                  <img src="/lovable-uploads/aaf83708-91b8-4e32-a55a-9ae63fb87046.png" alt="שעון חול" className="max-h-40 object-contain" />
-                </div>
                 <div className="md:w-2/3">
                   <h3 className="text-2xl font-bold text-elle-500 mb-2">מעוניינים לדעת עוד על השירותים שלנו?</h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-800 font-medium">
                     פנו אלינו לתיאום פגישת ייעוץ ראשונית ללא עלות וגלו כמה אתם יכולים לחסוך.
                   </p>
                 </div>

@@ -9,12 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <div className="flex items-center mb-4">
-              <img 
-                src="/lovable-uploads/68c799d7-fe06-4f1b-8850-f20c84ea9eff.png" 
-                alt="ELLE Logo" 
-                className="h-12 w-auto mr-2"
-              />
-              <h3 className="text-xl font-bold">ELLE | המשכנתא</h3>
+              <h3 className="text-xl font-bold">עמית דניאל | המשכנתא</h3>
             </div>
             <p className="text-white/80 mb-4">
               אנו מלווים אותך לאורך כל הדרך לקבלת המשכנתא האופטימלית עבורך,
@@ -23,6 +18,13 @@ const Footer = () => {
             <div className="flex items-center gap-4 mb-4">
               <Phone className="h-5 w-5 text-marble-200" />
               <span className="text-white/90">054-636-1746</span>
+            </div>
+            <div className="flex items-center gap-4 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-marble-200">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span className="text-white/90">יגאל בשן 2, קרית ביאליק</span>
             </div>
             <div className="flex space-x-4 space-x-reverse">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="h-10 w-10 bg-elle-400 hover:bg-elle-300 rounded-full flex items-center justify-center transition-colors">
@@ -90,7 +92,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-6 border-t border-elle-400 text-center text-white/60">
-          <p>© {new Date().getFullYear()} ELLE | המשכנתא - ייעוץ משכנתאות ופיננסים. כל הזכויות שמורות.</p>
+          <p>© {new Date().getFullYear()} עמית דניאל | המשכנתא - ייעוץ משכנתאות ופיננסים. כל הזכויות שמורות.</p>
         </div>
       </div>
     </footer>
