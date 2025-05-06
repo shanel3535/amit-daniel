@@ -68,12 +68,12 @@ const Footer = () => {
                 <MessageSquare className="h-4 w-4 text-marble-200" />
                 שלח הודעת וואטסאפ
               </a>
-              <a href="mailto:elle@ellemortgage.co.il" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
+              <a href="mailto:elhamashkanta@gmail.com" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-marble-200">
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
-                elle@ellemortgage.co.il
+                elhamashkanta@gmail.com
               </a>
             </div>
             

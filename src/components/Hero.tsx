@@ -11,7 +11,7 @@ const Hero = () => {
               <img 
                 src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png" 
                 alt="ELLE Logo" 
-                className="w-full max-w-4xl h-auto" 
+                className="w-full max-w-5xl h-auto" 
               />
             </div>
             <h1 className="heading-1 text-elle-500 mb-6 text-center">
@@ -37,7 +37,7 @@ const Hero = () => {
           </div>
           <div className="w-full max-w-md mt-8 animate-fade-in">
             <div className="bg-gray-100 p-6 rounded-lg shadow-xl border border-gray-200">
-              <h2 className="text-elle-500 text-2xl font-bold mb-4">ELLE</h2>
+              <h2 className="text-elle-500 text-2xl font-bold mb-4">עמית דניאל</h2>
               <p className="text-gray-700 text-lg mb-2">בעלת ELLE המשכנתא</p>
               <p className="text-gray-600 mb-6">
                 יועצת משכנתאות מוסמכת ומומחית בתחום הפיננסי, מלווה לקוחות למציאת הפתרון האידיאלי עבורם.

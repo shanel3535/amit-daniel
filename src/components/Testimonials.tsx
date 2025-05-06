@@ -9,29 +9,30 @@ import {
   CarouselPrevious 
 } from "@/components/ui/carousel";
 import { StarIcon } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const testimonials = [
   {
     name: "משפחת לוי",
-    image: "https://images.unsplash.com/photo-1581054399371-12cc5cdb9627?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    image: "/lovable-uploads/9d9e52f0-2e81-40cc-a2c0-1300765932fd.png",
     text: "עמית דניאל ליוותה אותנו בתהליך רכישת הדירה הראשונה שלנו. היא הצליחה למקסם את יכולת ההחזר שלנו ולהשיג עבורנו תנאים מעולים. חסכנו מעל 120,000 ₪ בעלות הכוללת של המשכנתא!",
     role: "רכישת דירה ראשונה",
   },
   {
     name: "רונית כהן",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    image: "/lovable-uploads/308adf70-9c52-4824-bf69-4fece67a2c94.png",
     text: "מחזרתי משכנתא באמצעות השירות של עמית דניאל והצלחתי לחסוך אלפי שקלים בחודש. התהליך היה פשוט, מהיר ועם תוצאות מדהימות. ממליצה בחום!",
     role: "מחזור משכנתא",
   },
   {
     name: "דנה ואלון",
-    image: "https://images.unsplash.com/photo-1515463138280-a8ab572304d4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    image: "/lovable-uploads/20b14bcb-396b-4f59-82e4-eee71f697aa3.png",
     text: "בזכות הייעוץ המקצועי של עמית דניאל, הצלחנו לקבל משכנתא בתנאים מעולים למרות שבנקים אחרים דחו אותנו. היא ידעה בדיוק איך להתמודד עם המורכבות של המקרה שלנו.",
     role: "משכנתא בתנאים מיוחדים",
   },
   {
     name: "מיכל גולדשטיין",
-    image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    image: "/lovable-uploads/68c799d7-fe06-4f1b-8850-f20c84ea9eff.png",
     text: "עמית דניאל הובילה אותנו לחיסכון משמעותי במחזור המשכנתא שלנו. היא פירקה את המסלולים הקיימים לפרטי פרטים והציעה תמהיל חדש שמתאים לנו בצורה מושלמת.",
     role: "משקיעת נדל״ן",
   },
@@ -64,7 +65,10 @@ const Testimonials = () => {
                       <p className="text-gray-700 mb-6">{testimonial.text}</p>
                       <div className="flex items-center">
                         <div className="h-12 w-12 rounded-full bg-gray-300 overflow-hidden">
-                          <img src={testimonial.image} alt={testimonial.name} className="h-full w-full object-cover" />
+                          <Avatar className="h-full w-full">
+                            <AvatarImage src={testimonial.image} alt={testimonial.name} className="h-full w-full object-cover" />
+                            <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                          </Avatar>
                         </div>
                         <div className="mr-4">
                           <h4 className="font-bold text-elle-500">{testimonial.name}</h4>
