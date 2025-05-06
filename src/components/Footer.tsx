@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <div className="flex items-center mb-4">
-              <h3 className="text-xl font-bold">עמית דניאל | המשכנתא</h3>
+              <h3 className="text-xl font-bold">ELLE | המשכנתא</h3>
             </div>
             <p className="text-white/80 mb-4">
               אנו מלווים אותך לאורך כל הדרך לקבלת המשכנתא האופטימלית עבורך,
@@ -92,7 +92,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-6 border-t border-elle-400 text-center text-white/60">
-          <p>© {new Date().getFullYear()} עמית דניאל | המשכנתא - ייעוץ משכנתאות ופיננסים. כל הזכויות שמורות.</p>
+          <p>© {new Date().getFullYear()} ELLE | המשכנתא - ייעוץ משכנתאות ופיננסים. כל הזכויות שמורות.</p>
         </div>
       </div>
     </footer>

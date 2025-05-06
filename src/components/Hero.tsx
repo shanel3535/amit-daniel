@@ -37,8 +37,8 @@ const Hero = () => {
           </div>
           <div className="w-full max-w-md mt-8 animate-fade-in">
             <div className="bg-gray-100 p-6 rounded-lg shadow-xl border border-gray-200">
-              <h2 className="text-elle-500 text-2xl font-bold mb-4">עמית דניאל</h2>
-              <p className="text-gray-700 text-lg mb-2">בעלת עמית דניאל המשכנתא</p>
+              <h2 className="text-elle-500 text-2xl font-bold mb-4">ELLE</h2>
+              <p className="text-gray-700 text-lg mb-2">בעלת ELLE המשכנתא</p>
               <p className="text-gray-600 mb-6">
                 יועצת משכנתאות מוסמכת ומומחית בתחום הפיננסי, מלווה לקוחות למציאת הפתרון האידיאלי עבורם.
               </p>

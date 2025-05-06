@@ -25,7 +25,7 @@ const Navbar = () => {
         <a href="#" className="flex items-center">
           <div className="flex items-center text-elle-500">
             <span className="font-bold text-xl">
-              עמית דניאל | 
+              ELLE | 
               <span className="text-marble-400"> המשכנתא</span>
             </span>
           </div>
