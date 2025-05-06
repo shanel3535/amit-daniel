@@ -146,55 +146,65 @@ const Contact = () => {
           </div>
           
           <div>
-            <div className="bg-elle-500 text-white rounded-xl shadow-xl p-6 md:p-8 h-full">
-              <h3 className="text-xl font-bold mb-6">פרטי התקשרות</h3>
-              
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6 text-marble-200" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-marble-200">טלפון</h4>
-                    <p className="text-white/90">054-636-1746</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-6 w-6 text-marble-200" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-marble-200">אימייל</h4>
-                    <p className="text-white/90">elle@ellemortgage.co.il</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-marble-200" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-marble-200">כתובת</h4>
-                    <p className="text-white/90">רחוב הברוש 15, תל אביב</p>
-                  </div>
-                </div>
+            <div className="bg-elle-500 text-white rounded-xl shadow-xl p-6 md:p-8 h-full relative overflow-hidden">
+              <div className="absolute inset-0 opacity-20">
+                <img 
+                  src="/lovable-uploads/497b326b-e760-4f4f-8a33-f41958bcff52.png" 
+                  alt="עמית דניאל" 
+                  className="w-full h-full object-cover"
+                />
               </div>
-              
-              <div className="mt-12">
-                <h4 className="font-medium text-marble-200 mb-3">שעות פעילות</h4>
-                <div className="space-y-2 text-white/90">
-                  <div className="flex justify-between">
-                    <span>ראשון - חמישי</span>
-                    <span>9:00 - 19:00</span>
+
+              <div className="relative z-10">
+                <h3 className="text-xl font-bold mb-6">פרטי התקשרות</h3>
+                
+                <div className="space-y-6">
+                  <div className="flex items-center gap-4">
+                    <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Phone className="h-6 w-6 text-marble-200" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-marble-200">טלפון</h4>
+                      <p className="text-white/90">054-636-1746</p>
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span>שישי</span>
-                    <span>9:00 - 13:00</span>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
+                      <Mail className="h-6 w-6 text-marble-200" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-marble-200">אימייל</h4>
+                      <p className="text-white/90">elhamashkanta@gmail.com</p>
+                    </div>
                   </div>
-                  <div className="flex justify-between">
-                    <span>שבת</span>
-                    <span>סגור</span>
+                  
+                  <div className="flex items-center gap-4">
+                    <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
+                      <MapPin className="h-6 w-6 text-marble-200" />
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-marble-200">כתובת</h4>
+                      <p className="text-white/90">יגאל בשן 2, קרית ביאליק</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="mt-12">
+                  <h4 className="font-medium text-marble-200 mb-3">שעות פעילות</h4>
+                  <div className="space-y-2 text-white/90">
+                    <div className="flex justify-between">
+                      <span>ראשון - חמישי</span>
+                      <span>9:00 - 19:00</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>שישי</span>
+                      <span>9:00 - 13:00</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>שבת</span>
+                      <span>סגור</span>
+                    </div>
                   </div>
                 </div>
               </div>

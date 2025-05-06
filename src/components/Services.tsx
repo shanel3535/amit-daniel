@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Home, CreditCard, WalletCards, Users } from "lucide-react";
+import { Home, CreditCard, WalletCards, Users, HandCoins } from "lucide-react";
 
 const serviceItems = [
   {
@@ -28,6 +28,12 @@ const serviceItems = [
     title: "ייעוץ פיננסי כולל",
     description: "תכנון פיננסי מקיף שכולל לא רק את המשכנתא אלא גם את כלל ההיבטים הפיננסיים בחיי המשפחה.",
   },
+  {
+    icon: <HandCoins className="h-10 w-10 text-elle-500" />,
+    image: "/lovable-uploads/68c799d7-fe06-4f1b-8850-f20c84ea9eff.png",
+    title: "איחוד הלוואות",
+    description: "איחוד מספר הלוואות למסלול אחד עם ריבית אטרקטיבית, הקטנת ההחזר החודשי ופריסה נוחה יותר.",
+  },
 ];
 
 const Services = () => {
@@ -42,7 +48,7 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {serviceItems.map((service, index) => (
             <Card key={index} className="elle-service-card border-marble-200 relative overflow-hidden">
               <div className="absolute inset-0 z-0">

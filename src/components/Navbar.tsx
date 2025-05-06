@@ -1,6 +1,14 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -46,12 +54,46 @@ const Navbar = () => {
           </a>
         </nav>
         <div className="md:hidden">
-          <Button
-            variant="ghost"
-            className="text-elle-500"
-          >
-            ☰
-          </Button>
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button
+                variant="ghost"
+                className="text-elle-500"
+              >
+                ☰
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+              <SheetHeader>
+                <SheetTitle className="text-right text-elle-500">ELLE | המשכנתא</SheetTitle>
+                <SheetDescription className="text-right">
+                  משכנתא בסטנדרט אחר
+                </SheetDescription>
+              </SheetHeader>
+              <div className="mt-6 flex flex-col space-y-4">
+                <MobileNavLink href="#home">בית</MobileNavLink>
+                <MobileNavLink href="#about">אודות</MobileNavLink>
+                <MobileNavLink href="#services">שירותים</MobileNavLink>
+                <MobileNavLink href="#testimonials">המלצות</MobileNavLink>
+                <MobileNavLink href="#contact">צור קשר</MobileNavLink>
+                <a href="#contact" className="mt-4">
+                  <Button 
+                    variant="default"
+                    className="w-full bg-elle-500 hover:bg-elle-600"
+                  >
+                    למילוי טופס פרטים
+                  </Button>
+                </a>
+              </div>
+              <div className="mt-8 pt-6 border-t">
+                <p className="text-muted-foreground text-sm text-right">
+                  יגאל בשן 2, קרית ביאליק<br />
+                  054-636-1746<br />
+                  elhamashkanta@gmail.com
+                </p>
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </header>
@@ -70,6 +112,21 @@ const NavLink = ({
   <a
     href={href}
     className={`px-4 py-2 rounded-md transition-colors duration-300 text-elle-500 hover:bg-elle-50`}
+  >
+    {children}
+  </a>
+);
+
+const MobileNavLink = ({ 
+  href, 
+  children 
+}: { 
+  href: string; 
+  children: React.ReactNode;
+}) => (
+  <a
+    href={href}
+    className="block px-4 py-3 text-lg text-elle-500 hover:bg-elle-50 rounded-md text-right w-full"
   >
     {children}
   </a>
