@@ -2,6 +2,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Home, CreditCard, WalletCards, Users, HandCoins } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const serviceItems = [
   {
@@ -30,19 +31,44 @@ const serviceItems = [
   },
   {
     icon: <HandCoins className="h-10 w-10 text-elle-500" />,
-    image: "/lovable-uploads/68c799d7-fe06-4f1b-8850-f20c84ea9eff.png",
+    image: "/lovable-uploads/aaf83708-91b8-4e32-a55a-9ae63fb87046.png", // Changed image for איחוד הלוואות
     title: "איחוד הלוואות",
     description: "איחוד מספר הלוואות למסלול אחד עם ריבית אטרקטיבית, הקטנת ההחזר החודשי ופריסה נוחה יותר.",
   },
 ];
 
 const Services = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById('services');
+      if (section) {
+        const rect = section.getBoundingClientRect();
+        const isInViewport = rect.top <= window.innerHeight * 0.7;
+        if (isInViewport) {
+          setIsVisible(true);
+        }
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    // Initial check
+    handleScroll();
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <section id="services" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-12">
-          <h2 className="heading-2 text-elle-500 mb-4">השירותים שלנו</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className={`heading-2 text-elle-500 mb-4 ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0'} transition-all duration-700`}>
+            השירותים שלנו
+          </h2>
+          <p className={`text-gray-600 max-w-2xl mx-auto ${isVisible ? 'animate-fade-up opacity-100' : 'opacity-0'} transition-all duration-700 delay-100`}>
             אנו מציעים מגוון פתרונות פיננסיים מותאמים אישית לצרכים שלך,
             עם דגש על שקיפות, מקצועיות וחיסכון לטווח הארוך.
           </p>
@@ -50,7 +76,13 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {serviceItems.map((service, index) => (
-            <Card key={index} className="elle-service-card border-marble-200 relative overflow-hidden">
+            <Card 
+              key={index} 
+              className={`elle-service-card border-marble-200 relative overflow-hidden transform transition-all duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl ${
+                isVisible ? 'animate-fade-up opacity-100' : 'opacity-0'
+              }`} 
+              style={{ transitionDelay: `${300 + index * 100}ms` }}
+            >
               <div className="absolute inset-0 z-0">
                 <img 
                   src={service.image} 
@@ -68,7 +100,10 @@ const Services = () => {
                 </CardContent>
                 <CardFooter>
                   <a href="#contact" className="w-full">
-                    <Button variant="outline" className="w-full border-elle-500 text-elle-500 hover:bg-elle-500 hover:text-white">
+                    <Button 
+                      variant="outline" 
+                      className="w-full border-elle-500 text-elle-500 hover:bg-elle-500 hover:text-white transition-colors duration-300"
+                    >
                       למידע נוסף
                     </Button>
                   </a>
@@ -78,7 +113,9 @@ const Services = () => {
           ))}
         </div>
         
-        <div className="mt-16 bg-gray-100 rounded-xl p-8 shadow-xl border border-gray-200 relative overflow-hidden">
+        <div className={`mt-16 bg-gray-100 rounded-xl p-8 shadow-xl border border-gray-200 relative overflow-hidden transform transition-all duration-500 ${
+          isVisible ? 'animate-fade-in opacity-100 delay-700' : 'opacity-0'
+        }`}>
           <div className="absolute inset-0 z-0">
             <img 
               src="/lovable-uploads/aaf83708-91b8-4e32-a55a-9ae63fb87046.png" 
@@ -98,7 +135,7 @@ const Services = () => {
               </div>
             </div>
             <a href="#contact">
-              <Button size="lg" className="bg-elle-500 hover:bg-elle-600 text-white">
+              <Button size="lg" className="bg-elle-500 hover:bg-elle-600 text-white hover:scale-105 transition-all duration-300">
                 תיאום פגישת ייעוץ
               </Button>
             </a>
