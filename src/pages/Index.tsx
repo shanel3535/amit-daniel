@@ -63,16 +63,16 @@ const Index = () => {
       <a href="#main" className="skip-to-content">דלג לתוכן העיקרי</a>
       {isLoading ? (
         <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-          <div className="flex flex-row items-center justify-center gap-8 animate-pulse">
+          <div className="flex flex-row items-center justify-center gap-2">
             <img
               src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png"
               alt="עמית דניאל"
-              className="w-48 h-auto rounded-full object-cover shadow-xl animate-bounce"
+              className="w-32 sm:w-48 md:w-64 h-auto rounded-full object-cover shadow-xl"
             />
             <img
               src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png"
               alt="ELLE Logo"
-              className="w-80 h-auto animate-pulse"
+              className="w-56 sm:w-72 md:w-[450px] h-auto"
             />
           </div>
         </div>
@@ -89,16 +89,16 @@ const Index = () => {
             </main>
           ) : (
             <div className="fixed inset-0 flex items-center justify-center bg-white z-40">
-              <div className="flex flex-row items-center justify-center gap-8">
+              <div className="flex flex-row items-center justify-center gap-2">
                 <img
                   src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png"
                   alt="עמית דניאל"
-                  className="w-48 h-auto rounded-full object-cover shadow-xl animate-float"
+                  className="w-32 sm:w-48 md:w-64 h-auto rounded-full object-cover shadow-xl"
                 />
                 <img
                   src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png"
                   alt="ELLE Logo"
-                  className="w-80 h-auto animate-scale-in"
+                  className="w-56 sm:w-72 md:w-[450px] h-auto"
                 />
               </div>
             </div>

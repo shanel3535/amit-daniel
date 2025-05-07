@@ -18,6 +18,11 @@ const Contact = () => {
           <ContactForm />
           <ContactInfo />
         </div>
+        
+        <div className="text-center mt-12 text-sm text-gray-500">
+          <div>טאקו-בניית אתרים | אפליקציות | דפי נחיתה</div>
+          <div>053-470-3003</div>
+        </div>
       </div>
     </section>
   );
