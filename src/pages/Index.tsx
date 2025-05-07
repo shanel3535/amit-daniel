@@ -20,7 +20,7 @@ const Index = () => {
       // Then after the logo animation is complete, show the rest of the content
       setTimeout(() => {
         setShowContent(true);
-      }, 1500); // Logo animation takes around 1.5 seconds
+      }, 1800); // Giving a bit more time for the logo animation to be appreciated
     }, 300);
   }, []);
 
@@ -67,12 +67,12 @@ const Index = () => {
             <img
               src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png"
               alt="עמית דניאל"
-              className="w-40 h-auto rounded-full object-cover shadow-xl animate-bounce"
+              className="w-48 h-auto rounded-full object-cover shadow-xl animate-bounce"
             />
             <img
               src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png"
               alt="ELLE Logo"
-              className="w-64 h-auto animate-pulse"
+              className="w-80 h-auto animate-pulse"
             />
           </div>
         </div>
@@ -93,12 +93,12 @@ const Index = () => {
                 <img
                   src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png"
                   alt="עמית דניאל"
-                  className="w-40 h-auto rounded-full object-cover shadow-xl animate-float"
+                  className="w-48 h-auto rounded-full object-cover shadow-xl animate-float"
                 />
                 <img
                   src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png"
                   alt="ELLE Logo"
-                  className="w-64 h-auto animate-scale-in"
+                  className="w-80 h-auto animate-scale-in"
                 />
               </div>
             </div>

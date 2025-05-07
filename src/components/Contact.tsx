@@ -159,33 +159,34 @@ const Contact = () => {
               <h3 className="text-xl font-bold mb-6">פרטי התקשרות</h3>
               
               <div className="space-y-6">
-                <div className="flex items-center gap-4 transform transition duration-300 hover:translate-x-2">
+                {/* Expanded contact details with more space for text */}
+                <div className="flex items-center gap-4 transform transition duration-300 hover:translate-x-2 w-full overflow-visible">
                   <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <Phone className="h-6 w-6 text-marble-200" />
                   </div>
-                  <div>
+                  <div className="min-w-0 w-full">
                     <h4 className="font-medium text-marble-200">טלפון</h4>
-                    <p className="text-white/90">054-636-1746</p>
+                    <p className="text-white/90 whitespace-normal break-words">054-636-1746</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 transform transition duration-300 hover:translate-x-2">
+                <div className="flex items-center gap-4 transform transition duration-300 hover:translate-x-2 w-full overflow-visible">
                   <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-marble-200" />
                   </div>
-                  <div>
+                  <div className="min-w-0 w-full">
                     <h4 className="font-medium text-marble-200">אימייל</h4>
-                    <p className="text-white/90">elhamashkanta@gmail.com</p>
+                    <p className="text-white/90 whitespace-normal break-words">elhamashkanta@gmail.com</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 transform transition duration-300 hover:translate-x-2">
+                <div className="flex items-center gap-4 transform transition duration-300 hover:translate-x-2 w-full overflow-visible">
                   <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
                     <MapPin className="h-6 w-6 text-marble-200" />
                   </div>
-                  <div>
+                  <div className="min-w-0 w-full">
                     <h4 className="font-medium text-marble-200">כתובת</h4>
-                    <p className="text-white/90">יגאל בשן 2, קרית ביאליק</p>
+                    <p className="text-white/90 whitespace-normal break-words">יגאל בשן 2, קרית ביאליק</p>
                   </div>
                 </div>
               </div>

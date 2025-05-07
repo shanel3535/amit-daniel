@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
@@ -22,12 +21,12 @@ const Hero = () => {
               className={`flex justify-center items-center w-full mb-10 ${isLoaded ? 'opacity-100' : 'opacity-0'} 
               transition-all duration-1000`}
             >
-              {/* Changed to always be in row format even on mobile */}
+              {/* Increased image and logo size */}
               <div className="flex flex-row items-center justify-center gap-4 sm:gap-8 md:gap-12">
                 <img 
                   src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png" 
                   alt="עמית דניאל" 
-                  className={`w-28 sm:w-40 md:w-56 h-auto rounded-full object-cover shadow-xl ${
+                  className={`w-32 sm:w-48 md:w-64 h-auto rounded-full object-cover shadow-xl ${
                     isLoaded ? 'animate-bounce opacity-100 transform rotate-6 scale-100' : 'opacity-0 scale-50'
                   } transition-all duration-1000 ease-out`}
                   style={{ transitionDelay: "300ms" }}
@@ -35,7 +34,7 @@ const Hero = () => {
                 <img 
                   src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png" 
                   alt="ELLE Logo" 
-                  className={`w-48 sm:w-64 md:w-96 h-auto ${
+                  className={`w-56 sm:w-72 md:w-[450px] h-auto ${
                     isLoaded ? 'opacity-100 transform scale-100 animate-pulse' : 'opacity-0 scale-50'
                   } transition-all duration-1000 ease-out`}
                   style={{ transitionDelay: "500ms" }}

@@ -30,8 +30,8 @@ const serviceItems = [
   },
   {
     icon: <HandCoins className="h-10 w-10 text-elle-500" />,
-    // Updated image for איחוד הלוואות to show money in wallet
-    image: "/lovable-uploads/4c610f2f-4977-4ef8-826d-6dca59197f98.png", 
+    // Updated image for איחוד הלוואות to the newly uploaded wallet with money image
+    image: "/lovable-uploads/0cb47055-90c2-4141-a19e-d1fe5133b46c.png", 
     title: "איחוד הלוואות",
     description: "איחוד מספר הלוואות למסלול אחד עם ריבית אטרקטיבית, הקטנת ההחזר החודשי ופריסה נוחה יותר.",
   },
