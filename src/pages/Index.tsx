@@ -1,5 +1,5 @@
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -10,7 +10,24 @@ import Footer from "@/components/Footer";
 import AccessibilityWidget from "@/components/AccessibilityWidget";
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false);
+
   useEffect(() => {
+    // First show the logo and image animation
+    setTimeout(() => {
+      setIsLoading(false);
+      // Then after the logo animation is complete, show the rest of the content
+      setTimeout(() => {
+        setShowContent(true);
+      }, 1500); // Logo animation takes around 1.5 seconds
+    }, 300);
+  }, []);
+
+  useEffect(() => {
+    // Only setup scroll animations after main content is visible
+    if (!showContent) return;
+    
     // Function to add animation classes when elements come into view
     const observer = new IntersectionObserver(
       (entries) => {
@@ -39,21 +56,57 @@ const Index = () => {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [showContent]);
 
   return (
     <div className="min-h-screen bg-background">
       <a href="#main" className="skip-to-content">דלג לתוכן העיקרי</a>
-      <Navbar />
-      <main id="main">
-        <Hero />
-        <About />
-        <Services />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
-      <AccessibilityWidget />
+      {isLoading ? (
+        <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
+          <div className="flex flex-row items-center justify-center gap-8 animate-pulse">
+            <img
+              src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png"
+              alt="עמית דניאל"
+              className="w-40 h-auto rounded-full object-cover shadow-xl animate-bounce"
+            />
+            <img
+              src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png"
+              alt="ELLE Logo"
+              className="w-64 h-auto animate-pulse"
+            />
+          </div>
+        </div>
+      ) : (
+        <>
+          <Navbar />
+          {showContent ? (
+            <main id="main" className="animate-fade-in">
+              <Hero />
+              <About />
+              <Services />
+              <Testimonials />
+              <Contact />
+            </main>
+          ) : (
+            <div className="fixed inset-0 flex items-center justify-center bg-white z-40">
+              <div className="flex flex-row items-center justify-center gap-8">
+                <img
+                  src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png"
+                  alt="עמית דניאל"
+                  className="w-40 h-auto rounded-full object-cover shadow-xl animate-float"
+                />
+                <img
+                  src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png"
+                  alt="ELLE Logo"
+                  className="w-64 h-auto animate-scale-in"
+                />
+              </div>
+            </div>
+          )}
+          <Footer />
+          <AccessibilityWidget />
+        </>
+      )}
     </div>
   );
 };

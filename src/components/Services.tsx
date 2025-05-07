@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Home, CreditCard, WalletCards, Users, HandCoins } from "lucide-react";
@@ -31,7 +30,8 @@ const serviceItems = [
   },
   {
     icon: <HandCoins className="h-10 w-10 text-elle-500" />,
-    image: "/lovable-uploads/aaf83708-91b8-4e32-a55a-9ae63fb87046.png", // Changed image for איחוד הלוואות
+    // Updated image for איחוד הלוואות to show money in wallet
+    image: "/lovable-uploads/4c610f2f-4977-4ef8-826d-6dca59197f98.png", 
     title: "איחוד הלוואות",
     description: "איחוד מספר הלוואות למסלול אחד עם ריבית אטרקטיבית, הקטנת ההחזר החודשי ופריסה נוחה יותר.",
   },
