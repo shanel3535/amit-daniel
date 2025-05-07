@@ -1,3 +1,4 @@
+
 import { Facebook, Instagram, Linkedin, Phone, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -92,9 +93,14 @@ const Footer = () => {
         
         <div className="mt-12 pt-6 border-t border-elle-400 text-center text-white/60">
           <p>© {new Date().getFullYear()} ELLE | המשכנתא - ייעוץ משכנתאות ופיננסים. כל הזכויות שמורות.</p>
-          <p className="mt-2 text-white/70 text-sm">
-            טאקו - בניית אתרים | אפליקציות | דפי נחיתה - 053-470-3003
-          </p>
+          <div className="mt-2">
+            <p className="text-white/70 text-sm">
+              טאקו - בניית אתרים | אפליקציות | דפי נחיתה
+            </p>
+            <p className="text-white/70 text-sm mt-1">
+              053-470-3003
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -146,7 +146,6 @@ const Contact = () => {
           </div>
           
           <div className="bg-elle-500 text-white rounded-xl shadow-xl p-6 md:p-8 h-full relative overflow-hidden transform transition-all duration-500 hover:shadow-2xl hover:-translate-y-1 flex flex-col md:flex-row items-center">
-            {/* Updated image layout to be side-by-side with contact details */}
             <div className="md:w-1/2 h-full relative mb-6 md:mb-0">
               <img 
                 src="/lovable-uploads/4c610f2f-4977-4ef8-826d-6dca59197f98.png" 
@@ -159,34 +158,34 @@ const Contact = () => {
               <h3 className="text-xl font-bold mb-6">פרטי התקשרות</h3>
               
               <div className="space-y-6">
-                {/* Expanded contact details with more space for text */}
-                <div className="flex items-center gap-4 transform transition duration-300 hover:translate-x-2 w-full overflow-visible">
-                  <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
+                {/* Made contact details container wider with better text wrapping */}
+                <div className="flex items-start gap-4 transform transition duration-300 hover:translate-x-2 w-full overflow-visible">
+                  <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Phone className="h-6 w-6 text-marble-200" />
                   </div>
                   <div className="min-w-0 w-full">
                     <h4 className="font-medium text-marble-200">טלפון</h4>
-                    <p className="text-white/90 whitespace-normal break-words">054-636-1746</p>
+                    <p className="text-white/90 whitespace-normal break-all">054-636-1746</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 transform transition duration-300 hover:translate-x-2 w-full overflow-visible">
-                  <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="flex items-start gap-4 transform transition duration-300 hover:translate-x-2 w-full overflow-visible">
+                  <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <Mail className="h-6 w-6 text-marble-200" />
                   </div>
                   <div className="min-w-0 w-full">
                     <h4 className="font-medium text-marble-200">אימייל</h4>
-                    <p className="text-white/90 whitespace-normal break-words">elhamashkanta@gmail.com</p>
+                    <p className="text-white/90 whitespace-normal break-all">elhamashkanta@gmail.com</p>
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-4 transform transition duration-300 hover:translate-x-2 w-full overflow-visible">
-                  <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="flex items-start gap-4 transform transition duration-300 hover:translate-x-2 w-full overflow-visible">
+                  <div className="h-12 w-12 bg-marble-200/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                     <MapPin className="h-6 w-6 text-marble-200" />
                   </div>
                   <div className="min-w-0 w-full">
                     <h4 className="font-medium text-marble-200">כתובת</h4>
-                    <p className="text-white/90 whitespace-normal break-words">יגאל בשן 2, קרית ביאליק</p>
+                    <p className="text-white/90 whitespace-normal break-all">יגאל בשן 2, קרית ביאליק</p>
                   </div>
                 </div>
               </div>

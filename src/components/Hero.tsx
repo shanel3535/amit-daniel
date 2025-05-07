@@ -21,7 +21,7 @@ const Hero = () => {
               className={`flex justify-center items-center w-full mb-10 ${isLoaded ? 'opacity-100' : 'opacity-0'} 
               transition-all duration-1000`}
             >
-              {/* Increased image and logo size */}
+              {/* Reverted to previous size and improved proportions */}
               <div className="flex flex-row items-center justify-center gap-4 sm:gap-8 md:gap-12">
                 <img 
                   src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png" 
