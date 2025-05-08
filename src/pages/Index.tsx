@@ -63,17 +63,17 @@ const Index = () => {
       <a href="#main" className="skip-to-content">דלג לתוכן העיקרי</a>
       {isLoading ? (
         <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-          {/* Moved elements more to the left with ml-auto and added animations */}
-          <div className="flex flex-row items-center justify-center gap-2 ml-auto pr-8 md:pr-12">
-            <img
-              src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png"
-              alt="עמית דניאל"
-              className="w-32 sm:w-48 md:w-64 h-auto rounded-full object-cover shadow-xl animate-float"
-            />
+          {/* Rearranged order and adjusted sizing to match Hero component */}
+          <div className="flex flex-row items-center justify-center gap-4">
             <img
               src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png"
               alt="ELLE Logo"
-              className="w-56 sm:w-72 md:w-[450px] h-auto animate-pulse"
+              className="w-48 sm:w-64 md:w-80 h-auto order-first animate-pulse"
+            />
+            <img
+              src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png"
+              alt="עמית דניאל"
+              className="w-40 sm:w-56 md:w-72 h-auto rounded-full object-cover shadow-xl animate-float"
             />
           </div>
         </div>
@@ -90,17 +90,17 @@ const Index = () => {
             </main>
           ) : (
             <div className="fixed inset-0 flex items-center justify-center bg-white z-40">
-              {/* Moved elements more to the left with ml-auto and added animations */}
-              <div className="flex flex-row items-center justify-center gap-2 ml-auto pr-8 md:pr-12">
-                <img
-                  src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png"
-                  alt="עמית דניאל"
-                  className="w-32 sm:w-48 md:w-64 h-auto rounded-full object-cover shadow-xl animate-float"
-                />
+              {/* Rearranged order and adjusted sizing to match Hero component */}
+              <div className="flex flex-row items-center justify-center gap-4">
                 <img
                   src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png"
                   alt="ELLE Logo"
-                  className="w-56 sm:w-72 md:w-[450px] h-auto animate-pulse"
+                  className="w-48 sm:w-64 md:w-80 h-auto order-first animate-pulse"
+                />
+                <img
+                  src="/lovable-uploads/2674af9d-8a97-4a68-9e63-c7c88e73ba4f.png"
+                  alt="עמית דניאל"
+                  className="w-40 sm:w-56 md:w-72 h-auto rounded-full object-cover shadow-xl animate-float"
                 />
               </div>
             </div>
