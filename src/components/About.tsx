@@ -69,7 +69,7 @@ const About = () => {
           <div className={`relative h-full flex justify-center lg:justify-end ${isVisible ? 'animate-fade-in-left opacity-100' : 'opacity-0'} transition-all duration-1000`}>
             <div className="bg-white p-1 rounded-lg shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-300">
               <img 
-                src="/lovable-uploads/68c799d7-fe06-4f1b-8850-f20c84ea9eff.png" 
+                src="/lovable-uploads/487f1ad1-bec0-44e3-8edd-63fbb5c93941.png" 
                 alt="תמונה של עמית דניאל" 
                 className="rounded-lg w-full max-w-md h-auto" 
               />
