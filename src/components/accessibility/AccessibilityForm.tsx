@@ -19,7 +19,7 @@ const AccessibilityForm = () => {
             הצהרת נגישות
           </Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]" dir="rtl">
+        <DialogContent className="sm:max-w-[400px] max-h-[80vh] overflow-y-auto" dir="rtl">
           <DialogHeader>
             <DialogTitle>הצהרת נגישות</DialogTitle>
             <DialogDescription>
@@ -31,7 +31,6 @@ const AccessibilityForm = () => {
             <p className="text-sm text-gray-600">
               אתר זה פועל לפי תקן הנגישות הישראלי (ת"י 5568) והתקן הבינלאומי לנגישות (WCAG 2.1 ברמה AA).
               האתר מכיל תכונות נגישות רבות כולל אפשרות לשינוי גודל טקסט, ניגודיות צבעים, עצירת הנפשות, ואפשרויות נוספות.
-              אנו מחויבים לספק חוויה נגישה לכל המשתמשים שלנו.
             </p>
             
             <p className="text-sm text-gray-600">

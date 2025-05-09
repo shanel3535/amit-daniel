@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Accessibility, PauseCircle } from "lucide-react";
+import { Accessibility, PauseCircle, RotateCcw } from "lucide-react";
 import { useAccessibility } from "@/hooks/use-accessibility";
 
 // Import the separated components
@@ -45,9 +45,11 @@ const AccessibilityWidget = () => {
             variant="outline" 
             size="sm" 
             onClick={resetAll}
-            className="text-xs"
+            className="text-xs flex items-center gap-1"
+            aria-label="איפוס כל הגדרות הנגישות"
           >
-            איפוס הכל
+            <RotateCcw className="h-3.5 w-3.5" />
+            איפוס
           </Button>
         </div>
         
