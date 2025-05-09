@@ -35,7 +35,7 @@ const AccessibilityWidget = () => {
       <PopoverContent 
         side="top" 
         align="start" 
-        className="w-72 p-4 text-right max-h-[90vh] overflow-y-auto" 
+        className="w-64 p-4 text-right max-h-[85vh] overflow-y-auto" 
         dir="rtl"
         sideOffset={16}
       >
