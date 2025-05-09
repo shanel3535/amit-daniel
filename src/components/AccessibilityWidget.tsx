@@ -32,7 +32,13 @@ const AccessibilityWidget = () => {
           <Accessibility className="h-7 w-7 text-white" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent side="top" align="start" className="w-80 p-4 text-right" dir="rtl">
+      <PopoverContent 
+        side="top" 
+        align="start" 
+        className="w-72 p-4 text-right max-h-[90vh] overflow-y-auto" 
+        dir="rtl"
+        sideOffset={16}
+      >
         <div className="flex justify-between items-center mb-4">
           <h3 className="font-bold text-lg text-elle-500">הגדרות נגישות</h3>
           <Button 
@@ -45,7 +51,7 @@ const AccessibilityWidget = () => {
           </Button>
         </div>
         
-        <div className="space-y-5">
+        <div className="space-y-4">
           {/* Font size controls */}
           <FontSizeControls 
             fontSize={settings.fontSize} 
@@ -92,7 +98,7 @@ const AccessibilityWidget = () => {
             />
           </div>
           
-          {/* Accessibility form and contact information */}
+          {/* Accessibility declaration */}
           <AccessibilityForm />
         </div>
       </PopoverContent>
