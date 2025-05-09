@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
@@ -114,6 +115,12 @@
   letter-spacing: 0.12em !important;
   word-spacing: 0.16em !important;
   line-height: 1.6 !important;
+}
+
+/* Stop animations class */
+.stop-animations * {
+  animation: none !important;
+  transition: none !important;
 }
 
 @font-face {
