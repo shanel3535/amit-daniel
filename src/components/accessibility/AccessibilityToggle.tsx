@@ -21,12 +21,14 @@ const AccessibilityToggle = ({
     onClick={onClick}
     size="sm"
     className={`justify-between h-auto py-2 ${isActive ? "bg-elle-500" : ""}`}
+    aria-pressed={isActive}
+    aria-label={`${label} - ${isActive ? "מופעל" : "כבוי"}`}
   >
     <span className="flex items-center">
       {icon}
       {label}
     </span>
-    {isActive && <Check className="h-4 w-4" />}
+    {isActive && <Check className="h-4 w-4" aria-hidden="true" />}
   </Button>
 );
 

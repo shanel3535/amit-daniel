@@ -10,10 +10,10 @@ interface FontSizeControlsProps {
 
 const FontSizeControls = ({ fontSize, onChange }: FontSizeControlsProps) => {
   return (
-    <div>
-      <h4 className="font-medium mb-2 flex items-center">
-        <ArrowUp className="h-4 w-4 ml-1" />
-        <ArrowDown className="h-4 w-4 ml-1" />
+    <div role="group" aria-labelledby="font-size-heading">
+      <h4 id="font-size-heading" className="font-medium mb-2 flex items-center">
+        <ArrowUp className="h-4 w-4 ml-1" aria-hidden="true" />
+        <ArrowDown className="h-4 w-4 ml-1" aria-hidden="true" />
         גודל טקסט
       </h4>
       <div className="flex gap-2">
@@ -22,6 +22,8 @@ const FontSizeControls = ({ fontSize, onChange }: FontSizeControlsProps) => {
           onClick={() => onChange("normal")}
           size="sm"
           className={fontSize === "normal" ? "bg-elle-500 flex-1" : "flex-1"}
+          aria-pressed={fontSize === "normal"}
+          aria-label="גודל טקסט רגיל"
         >
           רגיל
         </Button>
@@ -30,6 +32,8 @@ const FontSizeControls = ({ fontSize, onChange }: FontSizeControlsProps) => {
           onClick={() => onChange("large")}
           size="sm"
           className={fontSize === "large" ? "bg-elle-500 flex-1" : "flex-1"}
+          aria-pressed={fontSize === "large"}
+          aria-label="גודל טקסט גדול"
         >
           גדול
         </Button>
@@ -38,6 +42,8 @@ const FontSizeControls = ({ fontSize, onChange }: FontSizeControlsProps) => {
           onClick={() => onChange("larger")}
           size="sm"
           className={fontSize === "larger" ? "bg-elle-500 flex-1" : "flex-1"}
+          aria-pressed={fontSize === "larger"}
+          aria-label="גודל טקסט גדול מאוד"
         >
           גדול מאוד
         </Button>

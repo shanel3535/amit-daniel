@@ -60,10 +60,14 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <a href="#main" className="skip-to-content">דלג לתוכן העיקרי</a>
+      <a href="#main" className="skip-to-content" aria-label="דלג לתוכן העיקרי">דלג לתוכן העיקרי</a>
       {isLoading ? (
-        <div className="fixed inset-0 flex items-center justify-center bg-white z-50">
-          {/* Rearranged order and adjusted sizing to match Hero component */}
+        <div 
+          className="fixed inset-0 flex items-center justify-center bg-white z-50"
+          role="status"
+          aria-live="polite"
+          aria-label="טוען את האתר"
+        >
           <div className="flex flex-row items-center justify-center gap-4">
             <img
               src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png"
@@ -81,7 +85,7 @@ const Index = () => {
         <>
           <Navbar />
           {showContent ? (
-            <main id="main" className="animate-fade-in">
+            <main id="main" className="animate-fade-in" role="main" aria-label="תוכן עיקרי">
               <Hero />
               <About />
               <Services />
@@ -89,8 +93,12 @@ const Index = () => {
               <Contact />
             </main>
           ) : (
-            <div className="fixed inset-0 flex items-center justify-center bg-white z-40">
-              {/* Rearranged order and adjusted sizing to match Hero component */}
+            <div 
+              className="fixed inset-0 flex items-center justify-center bg-white z-40"
+              role="status"
+              aria-live="polite"
+              aria-label="טוען את התוכן"
+            >
               <div className="flex flex-row items-center justify-center gap-4">
                 <img
                   src="/lovable-uploads/9f5df582-db78-4848-a356-17011726d7d5.png"

@@ -29,7 +29,7 @@ const AccessibilityWidget = () => {
           className="fixed bottom-4 left-4 z-50 rounded-full h-14 w-14 bg-elle-500 hover:bg-elle-600 flex items-center justify-center shadow-lg"
           aria-label="אפשרויות נגישות"
         >
-          <Accessibility className="h-7 w-7 text-white" />
+          <Accessibility className="h-7 w-7 text-white" aria-hidden="true" />
         </Button>
       </PopoverTrigger>
       <PopoverContent 
@@ -38,9 +38,11 @@ const AccessibilityWidget = () => {
         className="w-64 p-4 text-right max-h-[85vh] overflow-y-auto" 
         dir="rtl"
         sideOffset={16}
+        role="dialog"
+        aria-label="תפריט אפשרויות נגישות"
       >
         <div className="flex justify-between items-center mb-4">
-          <h3 className="font-bold text-lg text-elle-500">הגדרות נגישות</h3>
+          <h3 className="font-bold text-lg text-elle-500" id="accessibility-heading">הגדרות נגישות</h3>
           <Button 
             variant="outline" 
             size="sm" 
@@ -48,7 +50,7 @@ const AccessibilityWidget = () => {
             className="text-xs flex items-center gap-1"
             aria-label="איפוס כל הגדרות הנגישות"
           >
-            <RotateCcw className="h-3.5 w-3.5" />
+            <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
             איפוס
           </Button>
         </div>
@@ -61,7 +63,9 @@ const AccessibilityWidget = () => {
           />
           
           {/* Accessibility toggles */}
-          <div className="grid grid-cols-1 gap-2">
+          <div className="grid grid-cols-1 gap-2" role="group" aria-labelledby="accessibility-options">
+            <h4 id="accessibility-options" className="sr-only">אפשרויות נגישות נוספות</h4>
+            
             <AccessibilityToggle 
               label="ניגודיות גבוהה" 
               isActive={settings.highContrast} 
@@ -96,7 +100,7 @@ const AccessibilityWidget = () => {
               label="עצירת הנפשות" 
               isActive={settings.stopAnimations} 
               onClick={toggleStopAnimations} 
-              icon={<PauseCircle className="h-4 w-4 ml-2" />}
+              icon={<PauseCircle className="h-4 w-4 ml-2" aria-hidden="true" />}
             />
           </div>
           

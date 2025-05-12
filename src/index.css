@@ -149,6 +149,12 @@
   outline-offset: 2px;
 }
 
+:focus-visible {
+  outline: 3px solid #1A1A1A;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.4);
+}
+
 /* Skip to main content link - keyboard accessibility */
 .skip-to-content {
   position: absolute;
@@ -233,4 +239,12 @@
 
 .animate-scale-in {
   animation: scale-in 1.5s ease-out forwards;
+}
+
+/* Additional Accessibility Enhancement */
+@media (prefers-reduced-motion) {
+  *, ::before, ::after {
+    animation-duration: 0.001s !important;
+    transition-duration: 0.001s !important;
+  }
 }
