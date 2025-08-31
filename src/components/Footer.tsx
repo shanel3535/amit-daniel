@@ -120,6 +120,14 @@ const Footer = () => {
               נבנה באהבה <Heart className="h-4 w-4 text-red-400" aria-hidden="true" /> עבור עמית דניאל 
               © {new Date().getFullYear()} | כל הזכויות שמורות
             </p>
+            <div className="mt-2">
+              <p className="text-white/70 text-sm">
+                טאקו - בניית אתרים | אפליקציות | דפי נחיתה
+              </p>
+              <p className="text-white/70 text-sm mt-1">
+                053-990-1796
+              </p>
+            </div>
           </div>
         </div>
       </div>
