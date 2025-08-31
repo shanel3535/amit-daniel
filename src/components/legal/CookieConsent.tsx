@@ -37,7 +37,7 @@ const CookieConsent = () => {
 
   return (
     <div 
-      className="fixed inset-0 bg-black/50 z-[60] flex items-end justify-center p-4"
+      className="fixed bottom-4 right-4 left-4 z-[60] flex justify-center"
       role="dialog"
       aria-labelledby="cookie-consent-title"
       aria-describedby="cookie-consent-description"
