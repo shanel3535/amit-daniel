@@ -8,6 +8,7 @@ import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import AccessibilityWidget from "@/components/AccessibilityWidget";
+import CookieConsent from "@/components/legal/CookieConsent";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -115,6 +116,7 @@ const Index = () => {
           )}
           <Footer />
           <AccessibilityWidget />
+          <CookieConsent />
         </>
       )}
     </div>
